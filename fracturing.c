@@ -109,7 +109,7 @@ double calculatePerimeter()
 
 double calculateArea()
 {
-    double radius = calculateDistance()/2;
+    double radius = helperFunction()/2;
 
     printf("The area of the city encompassed by your request is %.3lf\n", (PI * pow(radius, 2)));
 
