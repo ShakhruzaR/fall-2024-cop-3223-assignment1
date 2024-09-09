@@ -1,5 +1,9 @@
 Enter x1: Enter x2: Enter y1: Enter y2: The distance between the two points is 1.414
+Enter x1: Enter x2: Enter y1: Enter y2: The distance between the two points is 1.414
 The perimeter of the city encompassed by your request is 4.443
+Enter x1: Enter x2: Enter y1: Enter y2: The distance between the two points is 1.414
 The area of the city encompassed by your request is 1.571
+Enter x1: Enter x2: Enter y1: Enter y2: The distance between the two points is 1.414
 The width of the city encompassed by your request is 1.414
+Enter x1: Enter x2: Enter y1: Enter y2: The distance between the two points is 1.414
 The height of the city encompassed by your request is 1.414

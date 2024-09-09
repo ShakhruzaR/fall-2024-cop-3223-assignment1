@@ -18,20 +18,28 @@
 //define PI for later use
 #define PI 3.14159
 
+double helperFunction()
+{
+    
+}
+
 //********************************************************
-// double helperFunction()
+// double calculateDistance()
 //
 // Purpose:         Presents prompt for input and calculates distance
 // Input:         4 doubles: x1, y1, x2, y2 as the coordinate points
-// Output:              Prompt to enter inputs.
+// Output:              The found distance between the points (once)
 // Precondition:    None.
 // Postcondition:   Should return the result of calculation
 //********************************************************
 
-double helperFunction()
-{   
+double calculateDistance()
+{
+    
+
+    int count = 0;
     double x1, y1, x2, y2;
-    double distance; 
+    double distance;
 
     printf("Enter x1: "); // ask for input and enter input into doubles
     scanf("%lf", &x1);
@@ -45,35 +53,19 @@ double helperFunction()
     printf("Enter y2: ");
     scanf("%lf", &y2);
 
+    //calculate distance between points
+
     distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
-    return distance;
-}
-
-//********************************************************
-// double calculateDistance()
-//
-// Purpose:         Prints distance with return value from helper function
-// Input:          None.
-// Output:              The found distance between the points.
-// Precondition:    None.
-// Postcondition:   Should return the result of calculation
-//********************************************************
-
-double calculateDistance()
-{
-    double distance;
-
-    //calculate distance between points
-    distance = helperFunction();
-
     printf("The distance between the two points is %.3lf\n", distance);
+            
+    //update counter
+     count++;
+    
     //return distance so the value can be used by other functions
     return distance;
     
 }
-
-
 
 //********************************************************
 // double calculatePerimeter()
@@ -88,7 +80,7 @@ double calculatePerimeter()
 {
 
    //distance is diameter so find radius
-    double radius = helperFunction()/2;
+    double radius = calculateDistance()/2;
     
     //print circumference of the circle
     printf("The perimeter of the city encompassed by your request is %.3lf\n", (2*PI*radius));
@@ -103,7 +95,7 @@ double calculatePerimeter()
 //
 // Purpose:             Calculates the area of the circle based on distance found
 // Output:          Prints area.
-// Precondition:        helper function runs properly.
+// Precondition:        Distance function runs properly.
 // Postcondition:   None.
 //********************************************************
 
@@ -119,16 +111,16 @@ double calculateArea()
 //********************************************************
 // double calculateWidth()
 //
-// Purpose:             Uses helper function to display width.
+// Purpose:             Uses distance function to display width.
 // Output:          Prints width, which is same as distance in this shape.
-// Precondition:        helper function runs properly.
+// Precondition:        Distance function runs properly.
 // Postcondition:   None.
 //********************************************************
 
 double calculateWidth()
 {
     //width would just be distance
-    double width = helperFunction();
+    double width = calculateDistance();
     
     printf("The width of the city encompassed by your request is %.3lf\n", width);
 
@@ -140,14 +132,14 @@ double calculateWidth()
 //
 // Purpose:             Finds height of shape according to points inputted.
 // Output:          Prints height which is equal to distance for a circle.
-// Precondition:        helper function runs properly.
+// Precondition:        Distance function runs properly.
 // Postcondition:   None.
 //********************************************************
 
 double calculateHeight()
 {
     //height is just distance/diameter
-    double height = helperFunction();
+    double height = calculateDistance();
     printf("The height of the city encompassed by your request is %.3lf\n", height);
 
     return 1;
