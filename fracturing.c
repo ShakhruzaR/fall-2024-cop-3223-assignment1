@@ -19,7 +19,7 @@
 #define PI 3.14159
 
 //********************************************************
-// double helperFunction()
+// double calculateHelper()
 //
 // Purpose:         Presents prompt for input and calculates distance
 // Input:         4 doubles: x1, y1, x2, y2 as the coordinate points
@@ -28,7 +28,7 @@
 // Postcondition:   Should return the result of calculation
 //********************************************************
 
-double helperFunction()
+double calculateHelper()
 {   
     double x1, y1, x2, y2;
     double distance; 
@@ -65,7 +65,7 @@ double calculateDistance()
     double distance;
 
     //calculate distance between points
-    distance = helperFunction();
+    distance = calculateHelper();
 
     printf("The distance between the two points is %.3lf\n", distance);
     //return distance so the value can be used by other functions
@@ -88,7 +88,7 @@ double calculatePerimeter()
 {
 
    //distance is diameter so find radius
-    double radius = helperFunction()/2;
+    double radius = calculateHelper()/2;
     
     //print circumference of the circle
     printf("The perimeter of the city encompassed by your request is %.3lf\n", (2*PI*radius));
@@ -109,7 +109,7 @@ double calculatePerimeter()
 
 double calculateArea()
 {
-    double radius = helperFunction()/2;
+    double radius = calculateHelper()/2;
 
     printf("The area of the city encompassed by your request is %.3lf\n", (PI * pow(radius, 2)));
 
@@ -128,7 +128,7 @@ double calculateArea()
 double calculateWidth()
 {
     //width would just be distance
-    double width = helperFunction();
+    double width = calculateHelper();
     
     printf("The width of the city encompassed by your request is %.3lf\n", width);
 
@@ -147,7 +147,7 @@ double calculateWidth()
 double calculateHeight()
 {
     //height is just distance/diameter
-    double height = helperFunction();
+    double height = calculateHelper();
     printf("The height of the city encompassed by your request is %.3lf\n", height);
 
     return 1;
