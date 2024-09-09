@@ -2,7 +2,7 @@
 // fracturing.c
 // Author: Shakhruza Rustamova, 
 // UCFID: 5646859
-// Date: 9/2/2024
+// Date: 9/8/2024
 // Class: COP 3223, Professor Parra
 // Purpose: This program is meant to take in two
 //  coordinate points from the user and use them to calculate
